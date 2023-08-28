@@ -1,6 +1,6 @@
 @import './reset.css';
 @import './normalize.css';
-@import './utils/_variables.css';
+@import './utils/variables.css';
 @import './utils/animations.css';
 @import './pages/logo.css';
 @import './pages/navbar.css';

@@ -1,65 +1,68 @@
 .pagination {
-    font-weight: bold;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-    opacity: 0.8;
-    width: 100%;
+  font-weight: bold;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  opacity: 0.8;
+  width: 100%;
 }
 
 .pagination__switch-button {
-    background-image: url('/images/arrow-right.png');
-    opacity: 0.6;
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: none;
-    transition: 0.3s ease-in-out;
+  background-image: url('./images/arrow-right.png');
+  opacity: 0.6;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  transition: 0.3s ease-in-out;
 }
 
 .pagination__switch-button:hover {
-    cursor: pointer;
-    background-image: url('/images/arrow-right-active.png');
+  cursor: pointer;
+  background-image: url('./images/arrow-right-active.png');
 }
 
 .pagination__switch-button--left {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .pagination__switch-button--left:hover {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
+
 .pagination__blocks {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
+
 .pagination__block {
-    border: 2px solid var(--main-border-color);
-    width: 20px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10%;
-    transition: 0.3s ease-in-out;
+  border: 2px solid var(--main-border-color);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  transition: 0.3s ease-in-out;
 }
+
 .pagination__block:hover, .pagination__block--active {
-    border-color: var(--active-text-color);
-    cursor: pointer;
+  border-color: var(--active-text-color);
+  cursor: pointer;
 }
 
 
 @media (min-width: 768px) {
-    .pagination__block {
-        width: 32px;
-        height: 32px;
-    }
+  .pagination__block {
+    width: 32px;
+    height: 32px;
+  }
 
-    .pagination__switch-button {
-        width: 32px;
-        height: 32px;
-    }
+  .pagination__switch-button {
+    width: 32px;
+    height: 32px;
+  }
 }

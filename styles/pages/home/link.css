@@ -1,0 +1,12 @@
+.link {
+  color: var(--active-text-color);
+  text-shadow: none;
+  display: inline;
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.link:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+@import './reset.css';
+@import './normalize.css';
+@import './utils/_variables.css';
+@import './utils/animations.css';
+@import './pages/logo.css';
+@import './pages/navbar.css';
+@import './pages/main.css';
+@import './pages/footer.css';
+
+@import './pages/home/home.css';
+@import './pages/home/link.css';
+@import './pages/home/card.css';
+@import './pages/home/header-content.css';
+@import './pages/home/content.css';
+@import './pages/home/instruction.css';
+
+
+@import './pages/expenses/expenses.css';
+@import './pages/expenses/button.css';
+
+@import './pages/reports/reports.css';
+@import './pages/reports//pagination.css';
+
+
+@import './pages/account/account.css';

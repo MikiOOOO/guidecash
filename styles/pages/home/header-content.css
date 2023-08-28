@@ -1,0 +1,163 @@
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: space-between;
+}
+
+.header-content__title {
+  font-size: 24px;
+  align-self: center;
+  font-weight: 600;
+  text-shadow: 0px -2px 4px rgba(0, 0, 0, 0.3);
+  order: 1;
+}
+
+.header-content__image {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  filter: brightness(1.1);
+  transition: 0.3s ease-in-out;
+  order: 0;
+}
+
+.header-content__image:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+
+.header-content__arrow-down {
+  background-image: url('../../../images/arrow-down-sign-to-navigate.png');
+  order: 2;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  opacity: 0.8;
+  animation: moveUpDown 1s infinite ease-in-out;
+}
+
+.header-content__arrow-down:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .header-content__title {
+    font-size: 2em;
+  }
+
+  .header-content__arrow-down {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header-content__image {
+    width: 100%;
+    grid-column-start: 2;
+    
+  }
+
+  .header-content__title {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    font-size: 1.75em;
+  }
+
+  .header-content--services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header-content__image--services {
+    width: 100%;
+    grid-column-start: 1;
+    image-rendering: pixelated;
+  }
+
+  .header-content__title--services {
+    grid-column-start: 2;
+    margin-left: 50px;
+    grid-row-start: 1;
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header-content__arrow-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+  }
+
+  .header-content__image {
+    width: 50%;
+    order: 1;
+  }
+
+  .header-content--services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header-content__image--services {
+    width: 100%;
+    grid-column-start: 1;
+  }
+
+  .header-content__title--services {
+    grid-column-start: 2;
+    margin-left: 50px;
+  }
+}
+  
+@media (min-width: 1000px) {
+  .header-content__title {
+    font-size: 2.5em;
+  }
+
+  .header-content__title--services {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1500px) {
+  .header-content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-content--services {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-content__image--services {
+    width: 100%;
+    grid-column-start: 1;
+  }
+
+  .header-content__title--services {
+    grid-column-start: 2;
+    margin-left: 50px;
+    grid-row-start: 1;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header-content {
+    width: 60%;
+  }
+
+  .header-content__title {
+    font-size: 3.5em;
+  }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Guidecash</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles/index.css" rel="stylesheet">
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  <script src="scripts/index.js"></script>
+  <script src="scripts/reports.js"></script>
+  <script src="scripts/expenses.js"></script>
+</head>
+<body class="body">
+  <header class="header">
+    <div class="logo">
+      <a class="logo__link" href="#" onclick="loadContent('home.html')">
+        <img 
+          class="logo__image"
+          src='./images/logoipsum-286.svg'
+          alt="page logo"
+        >
+      </a>
+    </div>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a 
+            href="#"
+            class="nav__link"
+            onclick="loadContent('home.html')"
+          >
+            Home
+          </a>
+        </li>
+        <li class="nav__item">
+          <a 
+            href="#"
+            class="nav__link"
+            onclick="loadContent('reports.html')"
+          >
+            Reports
+          </a>
+        </li>
+        <li class="nav__item">
+          <a 
+            href="#"
+            class="nav__link"
+            onclick="loadContent('expenses.html')"
+          >
+            Expenses
+          </a>
+        </li>
+        <li class="nav__item">
+          <a 
+            href="#"
+            class="nav__link"
+            onclick="loadContent('account.html')"
+          >
+            Account
+          </a>
+        </li>
+      </ul>
+      <div class="burger-icon"></div>
+    </nav>
+    <nav class="header__nav-mobile" id="nav-mobile">
+      <a href="#" class="nav__burger-link--white">
+        <div class="nav__burger-icon nav__burger-icon--white">
+        
+      </div>
+      </a>
+      <ul class="nav__list-mobile">
+        <li class="nav__item-mobile">
+          <a 
+            href="#"
+            class="nav__link-mobile"
+            onclick="loadContent('home.html')"
+          >
+            Home
+          </a>
+        </li>
+        <li class="nav__item-mobile">
+          <a 
+            href="#"
+            class="nav__link-mobile"
+            onclick="loadContent('reports.html')"
+          >
+            Reports
+          </a>
+        </li>
+        <li class="nav__item-mobile">
+          <a 
+            href="#"
+            class="nav__link-mobile"
+            onclick="loadContent('expenses.html')"
+          >
+            Expenses
+          </a>
+        </li>
+        <li class="nav__item-mobile">
+          <a 
+            href="#"
+            class="nav__link-mobile"
+            onclick="loadContent('account.html')"
+          >
+            Account
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#nav-mobile" class="nav__burger-link">
+      <div class="nav__burger-icon">
+
+      </div>
+    </a>
+  </header>
+
+  <main class="main">
+  </main>
+
+  <footer class="footer">
+    <ul class="footer__nav">
+        <li class="footer__nav-item">
+            <a class="link">
+              download
+            </a>
+        </li>
+        <li class="footer__nav-item">
+            <a class="link">
+              policy
+            </a>
+        </li>
+        <li class="footer__nav-item">
+            <a class="link">
+              contact
+            </a>
+        </li>
+    </ul>
+    <img 
+      class="footer__up-arrow"
+      src="./images/arrow-right.png"
+      onclick="goUp()"
+      title="go up"
+    >
+  </footer>
+</body>
+</html>

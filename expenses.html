@@ -1,0 +1,40 @@
+<section class="expenses">
+  <fieldset class="expenses__fieldset">
+    <legend class="expenses__legend">Add Purchases</legend>
+    <form class="expenses__form">
+      <label class="expenses__form-label">enter product name
+        <input 
+          placeholder="Product name" 
+          type="text" 
+          class="expenses__form-input expenses__form-input--name"
+        >
+      </label>
+      <label class="expenses__form-label">enter category name
+        <input 
+          placeholder="Category name" 
+          type="text" 
+          class="expenses__form-input expenses__form-input--category"
+        >
+      </label>
+      <label class="expenses__form-label">enter price $
+        <input 
+          step="0.01" 
+          placeholder="Price $" 
+          type="number" 
+          class="expenses__form-input expenses__form-input--price" 
+          min="1"
+        >
+      </label>
+    </form>
+    <div class="expenses__form-tools">
+      <div class="expenses__form-tools-buttons">
+        <button class="button button--submit" type="submit">Submit</button>
+        <button class="button button--clear" type="button">Clear</button>
+      </div>
+      <div class="expenses__form-tools-added">
+        <a class="expenses__form-tools-added-text" onclick="loadContent('reports.html')">Total added: </a>
+        <p class="expenses__form-tools-added-value">9</p>
+      </div>
+    </div>
+  </fieldset>
+</section>

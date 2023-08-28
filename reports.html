@@ -1,0 +1,136 @@
+<section class="reports">
+  <form class="reports__form">
+    <button class="button reports__form-reset-button" type="button">Reset</button>
+    <label class="reports__form-label">search
+      <input 
+        placeholder="search..."
+        class="reports__form-input reports__form-input--search"
+        type="text"
+      >
+    </label>
+    <label class="reports__form-label reports__form-label--category">select category
+      <select class="reports__form-input reports__form-input--category">
+        <option disabled selected value="">Select category</option>
+        <option value="all">all</option>
+      </select>
+    </label>
+    <label class="reports__form-label reports__form-label--sort-by">sort by
+      <select class="reports__form-input reports__form-input--sort-by">
+        <option disabled selected value="">Sort by</option>
+        <option value="initial">initial</option>
+        <option value="date">date</option>
+        <option value="name">name</option>
+        <option value="price">price</option>
+      </select>
+    </label>
+    <label class="reports__form-label"></label>
+    <label class="reports__form-label reports__form-label--date-start">From
+      <input 
+        class="reports__form-input
+        reports__form-input--date-start" 
+        type="date" 
+      >
+    </label>
+    <label class="reports__form-label reports__form-label--date-end">To
+      <input 
+        class="reports__form-input
+        reports__form-input--date-end" 
+        type="date"
+      >
+    </label>
+  </form>
+  <table class="reports__table">
+    <thead class="reports__table-header">
+      <tr class="reports__table-header-row">
+        <th class="reports__table-header-data">Name</th>
+        <th class="reports__table-header-data">Price</th>
+        <th class="reports__table-header-data">Category</th>
+        <th class="reports__table-header-data">Date</th>
+      </tr>
+    </thead>
+    <tbody class="reports__table-body">
+      <tr class="reports__table-row">
+        <td class="reports__table-body-data">coffee</td>
+        <td class="reports__table-body-data reports__table-body-data--price">40</td>
+        <td class="reports__table-body-data">food</td>
+        <td class="reports__table-body-data">2022-07-16</td>
+      </tr>
+      <tr class="reports__table-row">
+        <td class="reports__table-body-data">bread</td>
+        <td class="reports__table-body-data reports__table-body-data--price">8</td>
+        <td class="reports__table-body-data">food</td>
+        <td class="reports__table-body-data">2022-08-03</td>
+      </tr>
+      <tr class="reports__table-row">
+        <td class="reports__table-body-data">cheese</td>
+        <td class="reports__table-body-data reports__table-body-data--price">21</td>
+        <td class="reports__table-body-data">food</td>
+        <td class="reports__table-body-data">2022-08-03</td>
+      </tr>
+      <tr class="reports__table-row">
+        <td class="reports__table-body-data">fuel</td>
+        <td class="reports__table-body-data reports__table-body-data--price">320</td>
+        <td class="reports__table-body-data">car</td>
+        <td class="reports__table-body-data">2022-08-14</td>
+      </tr>
+      <tr class="reports__table-row">
+        <td class="reports__table-body-data">car wash</td>
+        <td class="reports__table-body-data reports__table-body-data--price">60</td>
+        <td class="reports__table-body-data">car</td>
+        <td class="reports__table-body-data">2022-09-10</td>
+      </tr>
+      <tr class="reports__table-row">
+        <td class="reports__table-body-data">gym month entry</td>
+        <td class="reports__table-body-data">100</td>
+        <td class="reports__table-body-data">fitness</td>
+        <td class="reports__table-body-data">2023-05-11</td>
+      </tr>
+      <tr class="reports__table-row">
+        <td class="reports__table-body-data">cat food</td>
+        <td class="reports__table-body-data">25</td>
+        <td class="reports__table-body-data">food</td>
+        <td class="reports__table-body-data">2023-04-13</td>
+      </tr>
+      <tr class="reports__table-row">
+        <td class="reports__table-body-data">apples</td>
+        <td class="reports__table-body-data">1.50</td>
+        <td class="reports__table-body-data">food</td>
+        <td class="reports__table-body-data">2023-06-25</td>
+      </tr>
+      <tr class="reports__table-row">
+        <td class="reports__table-body-data">oranges</td>
+        <td class="reports__table-body-data reports__table-body-data--price">4.50</td>
+        <td class="reports__table-body-data">food</td>
+        <td class="reports__table-body-data">2023-06-23</td>
+      </tr>
+    </tbody>
+    <p class="reports__table-body-no-data-info">
+      No data available
+    </p>
+  </table>
+  <div class="reports__summary">
+    <div class="reports__summary-total"> 
+      <p class="reports__summary-total-text">Total: </p>
+      <p class="reports__summary-total-price"></p>
+    </div>
+    <div class="reports__summary-tools">
+      <button type="button" class="reports__form-reset-button button button--delete">Delete</button>
+    </div>
+  </div>
+  <div class="pagination">
+    <button 
+      type="button"
+      class="pagination__switch-button pagination__switch-button--left"
+      id="pagination__switch-button-left"
+    >
+    </button>
+    <div class="pagination__blocks">
+    </div>
+    <button 
+      type="button"
+      class="pagination__switch-button"
+      id="pagination__switch-button-right"
+    >
+    </button>
+  </div>
+</section>

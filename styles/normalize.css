@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap');
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  font-family: Catamaran, sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+  scroll-behavior: smooth;
+}

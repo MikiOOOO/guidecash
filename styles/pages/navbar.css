@@ -1,0 +1,152 @@
+.header {
+  height: 50px;
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.header__nav-mobile {
+  text-transform: uppercase;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  background-color: #000;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.nav {
+  display: none;
+}
+
+.nav__item-mobile {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.nav__link-mobile {
+  color: var(--main-bg-color);   
+}
+
+.nav__link-mobile:hover {
+  filter: blur(1px);
+}
+
+.nav__burger-link {
+  width: 32px;
+  height: 32px;
+}
+
+.nav__burger-icon {
+  background-image: url('../../images/burger-menu.png');
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+}
+
+.nav__burger-icon:hover {
+  opacity: 0.5;
+}
+
+#nav-mobile:target {
+  transform: translateY(0);
+}
+
+#nav-mobile:not(:target){
+  transform: translateY(-120%);
+}
+
+.nav__burger-link--white {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 20px;
+  right: 20px;
+}
+
+.nav__burger-icon--white {
+  background-image: url('../../images/burger-menu-white.png');
+}
+
+@media (min-width: 768px) {
+  .nav__burger-link {
+    display: none;
+  }
+
+  .header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    border-bottom: 3px solid var(--main-border-color);
+    padding: 0 20px;
+  }
+    
+  .header__nav-mobile {
+    display: none;
+  }
+
+  .nav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav__item {
+    padding: 5px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+  }
+  
+  .nav__list {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+  }
+  
+  .nav__link {
+    color: var(--active-text-color);
+    font-weight: 700;
+    padding: 5px;
+    width: 100%;
+    transition: 1s ease-in-out;
+  }
+
+  .nav__link::after {
+    content: "";
+    margin-bottom: 8px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .nav__link:hover::after, .nav__link:focus::after{
+    content: "";
+    margin-bottom: 8px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid var(--active-text-color);
+  }
+}

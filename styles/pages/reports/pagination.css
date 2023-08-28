@@ -10,8 +10,7 @@
 }
 
 .pagination__switch-button {
-  background-image: url('./images/arrow-right.png');
-  opacity: 0.6;
+  background-image: url('../../../images/arrow-right.png');
   width: 20px;
   height: 20px;
   background-size: contain;
@@ -22,13 +21,10 @@
 
 .pagination__switch-button:hover {
   cursor: pointer;
-  background-image: url('./images/arrow-right-active.png');
+  background-image: url('../../../images/arrow-right-active.png');
 }
 
-.pagination__switch-button--left {
-  transform: rotate(180deg);
-}
-
+.pagination__switch-button--left, 
 .pagination__switch-button--left:hover {
   transform: rotate(180deg);
 }
